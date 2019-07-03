@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Nguyên Tố</title>
+</head>
+<body>
+<script>
+    let num = prompt("Mời bạn nhập vào số number");
+    document.write("Các số nguyên tố từ 1--> đến n là:");
+    for (let k = 2; k <= num; k++) {
+        let dem = 0;
+        for (let i = 2; i <= Math.sqrt(k); i++) {
+            if (k % i == 0) {
+                dem += 1;
+            }
+        }
+        if (dem == 0) {
+
+            document.write(k + " ");
+        }
+    }
+
+</script>
+</body>
+</html>
